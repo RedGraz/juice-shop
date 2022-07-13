@@ -1,3 +1,4 @@
-- qlpack: codeql/javascript-all
+- apply: security-and-quality-selectors.yml
+  from: codeql/suite-helpers
 - exclude:
     security-severity: /([0-6]\.[0-9]+|9\.0+)/
