@@ -1,5 +1,3 @@
-name: "Only critical and high queries"
-disable-default-queries: true
 - apply: security-and-quality-selectors.yml
   from: codeql/suite-helpers
 - exclude:
