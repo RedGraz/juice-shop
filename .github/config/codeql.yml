@@ -1,4 +1,4 @@
 name: "Only critical queries"
 disable-default-queries: true
 queries:
-  - uses: ./.github/config/codeql-criticals.qls
+  - uses: ./.github/config/codeql-CritHigh.qls
