@@ -1,3 +1,4 @@
+- queries: .
 - apply: security-and-quality-selectors.yml
   from: codeql/suite-helpers
 - exclude:
