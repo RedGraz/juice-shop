@@ -3,11 +3,11 @@ name: "CodeQL"
 on:
   push:
   #Supply branch name(s) to scan
-    branches: [ "sec", "master" ]
+    branches: [ "sec-query", "master" ]
   pull_request:
 #Supply branch name(s) to scan
 #The branches below must be a subset of the branches above
-    branches: [ "sec", "master" ]
+    branches: [ "sec-query", "master" ]
   schedule:
     - cron: '36 6 * * 2'
 
