@@ -3,11 +3,11 @@ name: "CodeQL"
 on:
   push:
   #Supply branch name(s) to scan
-    branches: [ "sec", "master" ]
+    branches: [ "sec-quality" ]
   pull_request:
 #Supply branch name(s) to scan
 #The branches below must be a subset of the branches above
-    branches: [ "sec", "master" ]
+    branches: [ "sec-quality" ]
   schedule:
     - cron: '36 6 * * 2'
 
@@ -34,7 +34,8 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
-        config-file: ./.github/config/codeql.yml
+        queries: security-and-quality
+  #      config-file: ./.github/config/codeql.yml
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
